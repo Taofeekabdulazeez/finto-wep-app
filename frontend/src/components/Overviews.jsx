@@ -1,9 +1,9 @@
 function Overviews() {
   return (
-    <section className="bg-primary-shade">
-      <div className="w-[90%] max-w-[100rem] mx-auto">
-        <div className="grid grid-cols-1">
-          <div className="py-6">
+    <section>
+      <div className="grid grid-cols-1 sm:grid-cols-2 sm:items-center">
+        <div className="bg-primary-shade">
+          <div className="w-[90%] max-w-[100rem] mx-auto">
             <div>
               <span className="text-sm text-primary-tint">Global Scale</span>
               <h2 className="text-[2rem] font-semibold mb-6 text-white">
@@ -17,6 +17,7 @@ function Overviews() {
                 currency.
               </p>
             </div>
+
             <div className="flex flex-col gap-4">
               <div className="">
                 <span className="text-primary-tint font-bold text-lg">
@@ -38,7 +39,11 @@ function Overviews() {
               </div>
             </div>
           </div>
-          <div className="bg-primary-tint"></div>
+        </div>
+        <div className="bg-primary-tint">
+          <div className="w-[90%] max-w-[100rem] mx-auto pt-[9rem]">
+            <img src="Earth.png" alt="Earth" />
+          </div>
         </div>
       </div>
     </section>
