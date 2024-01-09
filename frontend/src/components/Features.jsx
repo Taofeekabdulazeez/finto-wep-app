@@ -62,7 +62,7 @@ function Features() {
             <Button>Learn more &rarr;</Button>
           </div>
           <div>
-            <img src="feature2.png" alt="Feature" />
+            <img src="feature3.png" alt="Feature" />
           </div>
         </div>
       </div>

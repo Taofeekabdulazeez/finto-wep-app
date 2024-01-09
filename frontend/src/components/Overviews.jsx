@@ -2,7 +2,7 @@ function Overviews() {
   return (
     <section className="bg-primary-shade">
       <div className="w-[90%] max-w-[100rem] mx-auto">
-        <div>
+        <div className="grid grid-cols-1">
           <div className="py-6">
             <div>
               <span className="text-sm text-primary-tint">Global Scale</span>
@@ -38,6 +38,7 @@ function Overviews() {
               </div>
             </div>
           </div>
+          <div className="bg-primary-tint"></div>
         </div>
       </div>
     </section>
