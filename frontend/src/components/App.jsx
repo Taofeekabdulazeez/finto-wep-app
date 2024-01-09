@@ -6,12 +6,14 @@ import Overviews from "./Overviews";
 import Testimonials from "./Testimonials";
 import CallToAction from "./CallToAction";
 import Footer from "./Footer";
+import Partnerships from "./Partnerships";
 
 function App() {
   return (
     <>
       <Header />
       <Hero />
+      <Partnerships />
       <Features />
       <Operations />
       <Overviews />
