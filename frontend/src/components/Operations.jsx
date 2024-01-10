@@ -2,7 +2,7 @@ import Slider from "./Slider";
 
 function Operations() {
   return (
-    <section>
+    <section className="py-[8rem]">
       <div className="w-[90%] max-w-[100rem] mx-auto">
         <div className="mb-8">
           <span className="text-sm text-stone-400">Build for Growth</span>

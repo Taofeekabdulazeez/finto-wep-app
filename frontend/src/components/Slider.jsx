@@ -24,7 +24,7 @@ function Slider() {
   return (
     <>
       <div
-        className={`flex flex-wrap sm:gap-6 relative sm:static h-[20rem] [&>*]:flex-1`}
+        className={`flex flex-wrap sm:gap-6 relative sm:static h-[24rem] [&>*]:flex-1`}
         onTouchStart={(event) => {
           setStartPosition(event.touches[0].pageX);
         }}
@@ -50,7 +50,7 @@ function Slider() {
         {slides.map((_, index) => (
           <span
             key={index}
-            className={`sm:hidden h-1.5 w-1.5 mt-4 rounded-full bg-stone-400 transition-all duration-300 ${
+            className={`sm:hidden h-1.5 w-1.5 mt-12 rounded-full bg-stone-400 transition-all duration-300 ${
               slideIndex === index ? "!bg-stone-600 scale-125" : ""
             }`}
           ></span>
