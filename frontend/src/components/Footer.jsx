@@ -1,3 +1,5 @@
+import Icon from "../ui/Icon";
+
 function Footer() {
   return (
     <footer className="py-8">
@@ -123,9 +125,23 @@ function Footer() {
           </ul>
         </nav>
         <div>
-          <p>2023 Finto. All right reserved</p>
-          <ul>
-            <li></li>
+          <p className="text-center my-4">2023 Finto. All right reserved</p>
+          <ul className="flex items-center justify-center gap-4">
+            <li>
+              <a href="#">
+                <Icon type="Linkedin" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <Icon type="twitter" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <Icon type="facebook" />
+              </a>
+            </li>
           </ul>
         </div>
       </div>

@@ -2,7 +2,7 @@ function Overviews() {
   return (
     <section>
       <div className="grid grid-cols-1 sm:grid-cols-2 sm:items-center">
-        <div className="bg-primary-shade">
+        <div className="bg-primary-shade py-8">
           <div className="w-[90%] max-w-[100rem] mx-auto">
             <div>
               <span className="text-sm text-primary-tint">Global Scale</span>
