@@ -1,11 +1,39 @@
+import { useEffect, useRef, useState } from "react";
+
 function Overviews() {
+  const [isIntersecting, setIsintersecting] = useState(false);
+  const ref = useRef(null);
+
+  useEffect(
+    function () {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          const entry = entries[0];
+
+          setIsintersecting(entry.isIntersecting);
+        },
+        {
+          root: null,
+          threshold: [1],
+        },
+      );
+
+      observer.observe(ref.current);
+
+      return () => observer.disconnect();
+    },
+    [isIntersecting, ref],
+  );
+
   return (
     <section>
       <div className="grid grid-cols-1 sm:grid-cols-2 sm:items-center">
         <div className="bg-primary-shade py-8">
           <div className="w-[90%] max-w-[100rem] mx-auto">
             <div>
-              <span className="text-sm text-primary-tint">Global Scale</span>
+              <span className="inline-block text-sm font-semibold uppercase tracking-wide text-primary-tint mb-4">
+                Global scale
+              </span>
               <h2 className="text-[2rem] font-semibold mb-6 text-white">
                 Sell Everywhere In Global Commerce
               </h2>
@@ -40,9 +68,37 @@ function Overviews() {
             </div>
           </div>
         </div>
-        <div className="bg-primary-tint">
+        <div ref={ref} className="bg-primary-tint relative">
           <div className="w-[90%] max-w-[100rem] mx-auto pt-[9rem]">
             <img src="Earth.png" alt="Earth" />
+            <img
+              className={`absolute top-[0%] left-0 w-[50%] scale-0 transition-all delay-0 ${
+                isIntersecting ? "scale-100" : ""
+              }`}
+              src="country1.png"
+              alt="country"
+            />
+            <img
+              className={`absolute top-[25%] right-0 w-[50%] scale-0 transition- duration-300 delay-75 ${
+                isIntersecting ? "scale-100" : ""
+              }`}
+              src="country2.png"
+              alt="country"
+            />
+            <img
+              className={`absolute top-[50%] left-0 w-[50%] scale-0 transition- duration-300 delay-200 ${
+                isIntersecting ? "scale-100" : ""
+              }`}
+              src="country3.png"
+              alt="country"
+            />
+            <img
+              className={`absolute top-[75%] right-0 w-[50%] scale-0 transition- duration-300 delay-300 ${
+                isIntersecting ? "scale-100" : ""
+              }`}
+              src="country4.png"
+              alt="country"
+            />
           </div>
         </div>
       </div>
