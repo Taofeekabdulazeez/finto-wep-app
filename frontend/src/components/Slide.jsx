@@ -25,7 +25,7 @@ function Slide({ index, slideIndex, data }) {
 Slide.propTypes = {
   index: PropTypes.number,
   slideIndex: PropTypes.number,
-  data: PropTypes.array,
+  data: PropTypes.object,
 };
 
 export default Slide;
