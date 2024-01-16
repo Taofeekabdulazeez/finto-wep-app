@@ -17,7 +17,11 @@ function Header() {
 
           console.log({ isIntersecting });
         },
-        { root: null, threshold: [0] },
+        {
+          root: null,
+          threshold: [0],
+          rootMargin: `-${ref.current.getBoundingClientRect().height}px`,
+        },
       );
 
       observer.observe(document.querySelector("section"));
