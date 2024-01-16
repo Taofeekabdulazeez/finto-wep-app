@@ -4,8 +4,10 @@ function Features() {
   return (
     <section className="py-6">
       <div className="w-[90%] max-w-[100rem] mx-auto">
-        <div className="mb-8">
-          <span className="text-sm text-stone-400">Solutions</span>
+        <div className="mb-16">
+          <span className="inline-block text-sm font-semibold uppercase tracking-wide text-primary-tint mb-4">
+            Solutions
+          </span>
           <h2 className="text-[2rem] font-bold mb-6">
             Open Your Business Account Online
           </h2>
@@ -16,9 +18,11 @@ function Features() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 gap-8">
+        <div className="grid grid-cols-1 gap-12">
           <div>
-            <span className="text-sm text-stone-400">Payment</span>
+            <span className="inline-block text-sm font-semibold uppercase tracking-wide text-primary-tint mb-4">
+              payment
+            </span>
             <h2 className="text-[2rem] font-bold mb-6">
               Accept and Optimize Payment Globally
             </h2>
@@ -34,7 +38,9 @@ function Features() {
           </div>
 
           <div>
-            <span className="text-sm text-stone-400">Built for Growth</span>
+            <span className="inline-block text-sm font-semibold uppercase tracking-wide text-primary-tint mb-4">
+              Custom card
+            </span>
             <h2 className="text-[2rem] font-bold mb-6">
               Take Your Business Faster
             </h2>

@@ -5,7 +5,9 @@ function Operations() {
     <section className="py-[8rem]">
       <div className="w-[90%] max-w-[100rem] mx-auto">
         <div className="mb-8">
-          <span className="text-sm text-stone-400">Build for Growth</span>
+          <span className="inline-block text-sm font-semibold uppercase tracking-wide text-primary-tint mb-4">
+            Built for growth
+          </span>
           <h2 className="text-[2rem] font-bold mb-6">
             Take your system faster
           </h2>
