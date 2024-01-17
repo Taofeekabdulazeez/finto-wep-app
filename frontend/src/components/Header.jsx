@@ -1,11 +1,16 @@
 import { useEffect, useRef, useState } from "react";
 import ButtonMenu from "../ui/ButtonMenu";
 import Logo from "../ui/Logo";
-// import Nav from "./Nav";
+import Nav from "./Nav";
 
 function Header() {
   const [isIntersecting, setIsintersecting] = useState(true);
+  const [isNavOpen, setIsNavOpen] = useState(false);
   const ref = useRef(null);
+
+  function handleMobileNav() {
+    setIsNavOpen((open) => !open);
+  }
 
   useEffect(
     function () {
@@ -38,8 +43,8 @@ function Header() {
       }`}
     >
       <Logo />
-      {/* <Nav /> */}
-      <ButtonMenu />
+      <Nav isOpen={isNavOpen} />
+      <ButtonMenu onClick={handleMobileNav} isOpen={isNavOpen} />
     </header>
   );
 }
