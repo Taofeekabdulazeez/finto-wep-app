@@ -72,28 +72,28 @@ function Overviews() {
           <div className="w-[90%] max-w-[100rem] mx-auto pt-[9rem]">
             <img src="Earth.png" alt="Earth" />
             <img
-              className={`absolute top-[0%] left-0 w-[60%] scale-0 transition-all delay-0 ${
+              className={`absolute top-[0%] left-0 w-[60%] scale-0 transition-all delay-75 ${
                 isIntersecting ? "scale-100" : ""
               }`}
               src="country1.png"
               alt="country"
             />
             <img
-              className={`absolute top-[25%] right-0 w-[60%] scale-0 transition- duration-300 delay-75 ${
+              className={`absolute top-[25%] right-0 w-[60%] scale-0 transition- duration-300 delay-0 ${
                 isIntersecting ? "scale-100" : ""
               }`}
               src="country2.png"
               alt="country"
             />
             <img
-              className={`absolute top-[50%] left-0 w-[60%] scale-0 transition- duration-300 delay-200 ${
+              className={`absolute top-[50%] left-0 w-[60%] scale-0 transition- duration-300 delay-300 ${
                 isIntersecting ? "scale-100" : ""
               }`}
               src="country3.png"
               alt="country"
             />
             <img
-              className={`absolute top-[75%] right-0 w-[60%] scale-0 transition- duration-300 delay-300 ${
+              className={`absolute top-[75%] right-0 w-[60%] scale-0 transition- duration-300 delay-200 ${
                 isIntersecting ? "scale-100" : ""
               }`}
               src="country4.png"
