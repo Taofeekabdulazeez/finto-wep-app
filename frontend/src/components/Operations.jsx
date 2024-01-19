@@ -8,8 +8,10 @@ function Operations() {
   const [slideIndex, setSlideIndex] = useState(0);
 
   const handleScrollX = function (event) {
+    console.log(event.target.scrollLeft);
     if (event.target.scrollLeft === 0) setSlideIndex(0);
-    else if (event.target.scrollLeft === 606) setSlideIndex(2);
+    else if (event.target.scrollLeft === 606 || event.target.scrollLeft > 400)
+      setSlideIndex(2);
     else setSlideIndex(1);
   };
 
