@@ -38,7 +38,7 @@ function Header() {
   return (
     <header
       ref={ref}
-      className={`bg-primary-shade flex items-center justify-between px-4 py-2 w-full z-10 transition-all ${
+      className={`bg-primary-shade flex items-center justify-between px-5 py-3 w-full z-10 transition-all ${
         isIntersecting ? "" : "fixed opacity-[0.95]"
       }`}
     >
