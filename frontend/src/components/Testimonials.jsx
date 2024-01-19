@@ -24,7 +24,7 @@ function Quote() {
         reprehenderit quo est eos nisi! Illum eius ipsa quo expedita.
       </p>
       <div className="flex items-center gap-6">
-        <div className="h-9 w-9 rounded-full bg-primary-tint overflow-hidden relative">
+        <div className="h-9 w-9 rounded-full bg-primary-50 overflow-hidden relative">
           <img
             src="customer-1.png"
             alt="customer img"
