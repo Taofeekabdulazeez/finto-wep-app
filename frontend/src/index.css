@@ -48,7 +48,11 @@ body {
   overflow-x: auto;
   overscroll-behavior-inline: contain;
 
-  /* scroll-snap-type: inline mandatory; */
+  scroll-snap-type: inline mandatory;
+}
+
+.media-scroller-2 > * {
+  scroll-snap-align: start;
 }
 
 .media-scroller-2::-webkit-scrollbar {
