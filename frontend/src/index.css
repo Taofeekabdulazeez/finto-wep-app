@@ -38,3 +38,19 @@ body {
   );
   mask: linear-gradient(90deg, transparent, white 10%, white 90%, transparent);
 }
+
+.media-scroller-2 {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 75%;
+  gap: 1rem;
+
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+
+  /* scroll-snap-type: inline mandatory; */
+}
+
+.media-scroller-2::-webkit-scrollbar {
+  width: 0;
+}
