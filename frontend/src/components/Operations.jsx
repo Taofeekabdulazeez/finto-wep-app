@@ -8,7 +8,7 @@ function Operations() {
           <span className="inline-block text-sm font-semibold uppercase tracking-wide text-primary-tint mb-4">
             Built for growth
           </span>
-          <h2 className="text-[2rem] font-bold mb-6">
+          <h2 className="text-[2rem] font-semibold mb-6">
             Take your system faster
           </h2>
           <p className="text-[1.1rem] text-stone-600 font-medium">

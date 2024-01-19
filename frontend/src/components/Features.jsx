@@ -8,7 +8,7 @@ function Features() {
           <span className="inline-block text-sm font-semibold uppercase tracking-wide text-primary-tint mb-4">
             Solutions
           </span>
-          <h2 className="text-[2rem] font-bold mb-6">
+          <h2 className="text-[2rem] font-semibold mb-6">
             Open Your Business Account Online
           </h2>
           <p className="text-[1.1rem] text-stone-600 font-medium">
@@ -23,7 +23,7 @@ function Features() {
             <span className="inline-block text-sm font-semibold uppercase tracking-wide text-primary-tint mb-4">
               payment
             </span>
-            <h2 className="text-[2rem] font-bold mb-6">
+            <h2 className="text-[2rem] font-semibold mb-6">
               Accept and Optimize Payment Globally
             </h2>
             <p className="text-[1.1rem] text-stone-600 font-medium mb-6">
@@ -41,7 +41,7 @@ function Features() {
             <span className="inline-block text-sm font-semibold uppercase tracking-wide text-primary-tint mb-4">
               Custom card
             </span>
-            <h2 className="text-[2rem] font-bold mb-6">
+            <h2 className="text-[2rem] font-semibold mb-6">
               Take Your Business Faster
             </h2>
             <p className="text-[1.1rem] text-stone-600 font-medium mb-6">
