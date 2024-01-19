@@ -9,7 +9,7 @@ function Footer() {
         </div>
         <nav className="grid grid-cols-2 gap-8 border-b-2 py-6">
           <ul className="flex flex-col gap-3">
-            <li>Features</li>
+            <li className="text-stone-500">Features</li>
             <li>
               <a className="text-sm font-medium" href="#">
                 Payment Link
@@ -35,86 +35,86 @@ function Footer() {
                 Integration
               </a>
             </li>
-          </ul>
-
-          <ul className="flex flex-col gap-3">
-            <li>Features</li>
             <li>
               <a className="text-sm font-medium" href="#">
-                Payment Link
-              </a>
-            </li>
-            <li>
-              <a className="text-sm font-medium" href="#">
-                Recurring Billing
-              </a>
-            </li>
-            <li>
-              <a className="text-sm font-medium" href="#">
-                Invoicing
-              </a>
-            </li>
-            <li>
-              <a className="text-sm font-medium" href="#">
-                Checkout
-              </a>
-            </li>
-            <li>
-              <a className="text-sm font-medium" href="#">
-                Integration
+                Pricing
               </a>
             </li>
           </ul>
 
           <ul className="flex flex-col gap-3">
-            <li>Features</li>
+            <li className="text-stone-500">Solutons</li>
             <li>
               <a className="text-sm font-medium" href="#">
-                Payment Link
+                eCommerce
               </a>
             </li>
             <li>
               <a className="text-sm font-medium" href="#">
-                Recurring Billing
+                Financial Automation
               </a>
             </li>
             <li>
               <a className="text-sm font-medium" href="#">
-                Invoicing
+                Crypto
               </a>
             </li>
             <li>
               <a className="text-sm font-medium" href="#">
-                Checkout
+                Global Business
               </a>
             </li>
             <li>
               <a className="text-sm font-medium" href="#">
-                Integration
+                Market Places
               </a>
             </li>
           </ul>
 
           <ul className="flex flex-col gap-3">
-            <li>Features</li>
+            <li className="text-stone-500">Resources</li>
             <li>
               <a className="text-sm font-medium" href="#">
-                Payment Link
+                Tutorials
               </a>
             </li>
             <li>
               <a className="text-sm font-medium" href="#">
-                Recurring Billing
+                Blog
               </a>
             </li>
             <li>
               <a className="text-sm font-medium" href="#">
-                Invoicing
+                Community
               </a>
             </li>
             <li>
               <a className="text-sm font-medium" href="#">
-                Checkout
+                Privacy Policy
+              </a>
+            </li>
+          </ul>
+
+          <ul className="flex flex-col gap-3">
+            <li className="text-stone-500">About</li>
+            <li>
+              <a className="text-sm font-medium" href="#">
+                Company
+              </a>
+            </li>
+            <li>
+              <a className="text-sm font-medium" href="#">
+                Careers
+              </a>
+            </li>
+            <li>
+              <a className="text-sm font-medium" href="#">
+                FAQs
+              </a>
+            </li>
+            <li>
+              <a className="text-sm font-medium" href="#">
+                Contact us
               </a>
             </li>
             <li>
@@ -125,7 +125,9 @@ function Footer() {
           </ul>
         </nav>
         <div>
-          <p className="text-center my-4">2023 Finto. All right reserved</p>
+          <p className="text-center my-4 font-medium">
+            2023 Finto. All right reserved
+          </p>
           <ul className="flex items-center justify-center gap-4">
             <li>
               <a href="#">
