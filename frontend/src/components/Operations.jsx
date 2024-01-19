@@ -5,6 +5,13 @@ import { slides } from "../data/data";
 
 function Operations() {
   const [interchange] = useState(false);
+  const [slideIndex, setSlideIndex] = useState(0);
+
+  const handleScrollX = function (event) {
+    if (event.target.scrollLeft === 0) setSlideIndex(0);
+    else if (event.target.scrollLeft === 606) setSlideIndex(2);
+    else setSlideIndex(1);
+  };
 
   return (
     <section className="py-[8rem]">
@@ -23,13 +30,24 @@ function Operations() {
         </div>
         {interchange && <Slider />}
 
-        <div className="media-scroller-2">
+        <div className="media-scroller-2" onScroll={handleScrollX}>
           {slides.map((slide, index) => (
             <Operation
               image={slide.image}
               description={slide.description}
               key={index}
             />
+          ))}
+        </div>
+
+        <div className="flex items-center justify-center gap-2">
+          {slides.map((_, index) => (
+            <span
+              key={index}
+              className={`sm:hidden h-1.5 w-1.5 mt-12 rounded-full bg-stone-400 transition-all duration-300 ${
+                slideIndex === index ? "!bg-stone-600 scale-125" : ""
+              }`}
+            ></span>
           ))}
         </div>
       </div>
@@ -40,7 +58,7 @@ function Operations() {
 function Operation({ image, description }) {
   return (
     <div className="rounded overflow-hidden shadow-lg">
-      <div className="bg-slate-200">
+      <div className="">
         <img className="w-[100%]" src={image} alt="Artificial Intelligence" />
       </div>
       <div className="p-4">
