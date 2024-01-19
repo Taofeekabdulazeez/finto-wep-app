@@ -19,8 +19,6 @@ function Header() {
           const entry = entries[0];
 
           setIsintersecting(entry.isIntersecting);
-
-          console.log({ isIntersecting });
         },
         {
           root: null,

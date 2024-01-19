@@ -49,6 +49,7 @@ body {
   overscroll-behavior-inline: contain;
 
   scroll-snap-type: inline mandatory;
+  /* scroll-padding-inline: 1rem; */
 }
 
 .media-scroller-2 > * {

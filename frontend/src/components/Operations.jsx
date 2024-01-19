@@ -46,7 +46,7 @@ function Operations() {
           {slides.map((_, index) => (
             <span
               key={index}
-              className={`sm:hidden h-1.5 w-1.5 mt-12 rounded-full bg-stone-400 transition-all duration-300 ${
+              className={`sm:hidden h-1.5 w-1.5 mt-4 rounded-full bg-stone-400 transition-all duration-300 ${
                 slideIndex === index ? "!bg-stone-600 scale-125" : ""
               }`}
             ></span>
@@ -59,7 +59,7 @@ function Operations() {
 
 function Operation({ image, description }) {
   return (
-    <div className="rounded overflow-hidden shadow-lg">
+    <div className="rounded-xl overflow-hidden mb-4 shadow-[0px_3px_6px_0px_rgba(0,0,0,0.15)]">
       <div className="">
         <img className="w-[100%]" src={image} alt="Artificial Intelligence" />
       </div>
