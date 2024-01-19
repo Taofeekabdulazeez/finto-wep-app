@@ -43,7 +43,7 @@ body {
   display: grid;
   grid-auto-flow: column;
   grid-auto-columns: 90%;
-  gap: 1rem;
+  gap: 1.2rem;
 
   overflow-x: auto;
   overscroll-behavior-inline: contain;
