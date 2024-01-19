@@ -24,6 +24,10 @@ body {
   scroll-snap-type: inline mandatory;
 }
 
+.media-scroller::-webkit-scrollbar {
+  width: 0;
+}
+
 .media-scroller > * {
   scroll-snap-align: start;
 }
