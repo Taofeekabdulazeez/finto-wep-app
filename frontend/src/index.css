@@ -21,7 +21,7 @@ body {
   overflow-x: auto;
   overscroll-behavior-inline: contain;
 
-  scroll-snap-type: inline mandatory;
+  /* scroll-snap-type: inline mandatory; */
 }
 
 .media-scroller::-webkit-scrollbar {
@@ -29,5 +29,5 @@ body {
 }
 
 .media-scroller > * {
-  scroll-snap-align: start;
+  /* scroll-snap-align: start; */
 }
