@@ -2,7 +2,7 @@ function Testimonials() {
   return (
     <section className="py-[9rem]">
       <div className="w-[90%] max-w-[100rem] mx-auto">
-        <div className="media-scroller">
+        <div className="media-scroller mask-gradient">
           <Quote />
           <Quote />
           <Quote />

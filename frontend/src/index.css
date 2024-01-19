@@ -28,6 +28,13 @@ body {
   width: 0;
 }
 
-.media-scroller > * {
-  /* scroll-snap-align: start; */
+.mask-gradient {
+  -webkit-mask: linear-gradient(
+    90deg,
+    transparent,
+    white 10%,
+    white 90%,
+    transparent
+  );
+  mask: linear-gradient(90deg, transparent, white 10%, white 90%, transparent);
 }
