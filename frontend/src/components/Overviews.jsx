@@ -1,7 +1,10 @@
 import { useEffect, useRef, useState } from "react";
+import CountUp from "react-countup";
+import ScrollTrigger from "react-scroll-trigger";
 
 function Overviews() {
   const [isIntersecting, setIsintersecting] = useState(false);
+  const [counterOn, setCounterOn] = useState(false);
   const ref = useRef(null);
 
   useEffect(
@@ -46,26 +49,43 @@ function Overviews() {
               </p>
             </div>
 
-            <div className="flex flex-col gap-4">
-              <div className="">
-                <span className="text-primary-tint font-bold text-lg">
-                  132+
-                </span>
-                <p className="text-white">Currencies supported</p>
+            <ScrollTrigger
+              onEnter={() => setCounterOn(true)}
+              onExit={() => setCounterOn(false)}
+            >
+              <div className="flex flex-col gap-4">
+                <div className="">
+                  <span className="text-primary-tint font-bold text-lg">
+                    {counterOn && (
+                      <CountUp start={0} end={132} duration={2} suffix="+" />
+                    )}
+                  </span>
+                  <p className="text-white">Currencies supported</p>
+                </div>
+                <div className="">
+                  <span className="text-primary-tint font-bold text-lg">
+                    {counterOn && (
+                      <CountUp
+                        start={0}
+                        end={85.5}
+                        suffix="%"
+                        duration={2}
+                        decimals={1}
+                      />
+                    )}
+                  </span>
+                  <p className="text-white">Business using Finto</p>
+                </div>
+                <div className="">
+                  <span className="text-primary-tint font-bold text-lg">
+                    {counterOn && (
+                      <CountUp start={0} end={150} duration={2} suffix="M" />
+                    )}
+                  </span>
+                  <p className="text-white">API request per day</p>
+                </div>
               </div>
-              <div className="">
-                <span className="text-primary-tint font-bold text-lg">
-                  85.5%
-                </span>
-                <p className="text-white">Business using Finto</p>
-              </div>
-              <div className="">
-                <span className="text-primary-tint font-bold text-lg">
-                  150M
-                </span>
-                <p className="text-white">API request per day</p>
-              </div>
-            </div>
+            </ScrollTrigger>
           </div>
         </div>
         <div ref={ref} className="bg-primary-tint relative">
