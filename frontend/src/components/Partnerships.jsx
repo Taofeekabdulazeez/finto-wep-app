@@ -5,7 +5,7 @@ function Partnerships() {
         <p className="text-[#fff] text-center mb-6 opacity-[0.8] w-[25ch] mx-auto">
           Trusted by thousand companies in the world
         </p>
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-2 gap-4 lg:grid-cols-[1fr_1fr_1fr_1fr]">
           <div>
             <img
               className="w-[60%] block mx-auto"

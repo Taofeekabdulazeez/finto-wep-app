@@ -10,7 +10,7 @@ function CallToAction() {
         <p className="text-[#ffffff] text-[1.2rem] opacity-[0.8] mb-8 text-center">
           Join over 300+ partners and customers already growing with Benefit
         </p>
-        <div className="grid grid-cols-1 gap-4">
+        <div className="grid grid-cols-1 gap-4 lg:flex lg:justify-center">
           <Button type="primary">Open an Account</Button>
           <Button type="inverted">Contact Sales</Button>
         </div>

@@ -30,8 +30,8 @@ function Overviews() {
 
   return (
     <section>
-      <div className="grid grid-cols-1 sm:grid-cols-2 sm:items-center">
-        <div className="bg-primary-shade py-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2">
+        <div className="bg-primary-shade py-8 lg">
           <div className="w-[90%] max-w-[100rem] mx-auto">
             <div>
               <span className="inline-block text-sm font-semibold uppercase tracking-wide text-primary-tint mb-4">

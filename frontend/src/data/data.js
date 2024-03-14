@@ -30,4 +30,9 @@ export const testimonials = [
     fullName: "Rajesh Kumar",
     occupation: "Architect",
   },
+  {
+    image: "customer-3.png",
+    fullName: "Emily Lara",
+    occupation: "Finacial Analyst",
+  },
 ];

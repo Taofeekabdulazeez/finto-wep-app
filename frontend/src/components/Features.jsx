@@ -4,7 +4,7 @@ function Features() {
   return (
     <section className="py-6">
       <div className="w-[90%] max-w-[100rem] mx-auto">
-        <div className="mb-16">
+        <div className="mb-16 lg:w-[70%]">
           <span className="inline-block text-sm font-semibold uppercase tracking-wide text-primary-tint mb-4">
             Solutions
           </span>
@@ -18,7 +18,7 @@ function Features() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 gap-12">
+        <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-24 lg:items-center">
           <div>
             <span className="inline-block text-sm font-semibold uppercase tracking-wide text-primary-tint mb-4">
               payment
@@ -33,7 +33,7 @@ function Features() {
             </p>
             <Button>Learn more &rarr;</Button>
           </div>
-          <div>
+          <div className="lg:p">
             <img src="feature1.png" alt="Feature" />
           </div>
 

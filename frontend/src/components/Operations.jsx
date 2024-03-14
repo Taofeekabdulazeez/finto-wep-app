@@ -32,7 +32,10 @@ function Operations() {
         </div>
         {interchange && <Slider />}
 
-        <div className="media-scroller-2" onScroll={handleScrollX}>
+        <div
+          className="media-scroller-2 lg:grid lg:grid-cols-3 lg:gap-8"
+          onScroll={handleScrollX}
+        >
           {slides.map((slide, index) => (
             <Operation
               image={slide.image}

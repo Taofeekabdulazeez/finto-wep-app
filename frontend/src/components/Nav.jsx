@@ -5,11 +5,11 @@ import Button from "../ui/Button";
 function Nav({ isOpen }) {
   return (
     <nav
-      className={`bg-primary-shade fixed h-[100vh] inset-0 z-20 translate-y-[-100%] transition-[transform] flex flex-col items-center gap-20 pt-20 ${
+      className={`bg-primary-shade fixed lg:static h-[100vh] lg:h-auto inset-0 z-20 translate-y-[-100%] transition-[transform] lg:translate-x-[none] flex flex-col lg:flex-row items-center lg:justify-between lg:w-full gap-20 pt-20 lg:pt-0 ${
         isOpen ? "translate-y-[0]" : ""
       }`}
     >
-      <ul className="flex flex-col gap-6 items-center">
+      <ul className="flex flex-col lg:flex-row gap-6 items-center">
         <li>
           <Link>Features</Link>
         </li>
@@ -27,7 +27,7 @@ function Nav({ isOpen }) {
         </li>
       </ul>
 
-      <ul className="flex flex-col gap-4 items-center">
+      <ul className="flex flex-col lg:flex-row gap-4 items-center">
         <li className="">
           <Button type="inverted">Sign In</Button>
         </li>

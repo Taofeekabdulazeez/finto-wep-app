@@ -11,7 +11,7 @@ function Testimonials() {
           </span>
           <h2 className="text-[2rem] font-semibold mb-6">What customer says</h2>
         </div>
-        <div className="media-scroller mask-gradient">
+        <div className="media-scroller mask-gradient lg:flex lg:[&>*]:flex-[1_1_30%] flex-wrap">
           {testimonials.map((testimonial) => {
             const { fullName, image, occupation } = testimonial;
 

@@ -2,7 +2,7 @@ import Proptypes from "prop-types";
 
 function ButtonMenu({ onClick, isOpen }) {
   return (
-    <button className="z-30" onClick={onClick}>
+    <button className="z-30 lg:hidden" onClick={onClick}>
       {isOpen ? (
         <svg
           xmlns="http://www.w3.org/2000/svg"
