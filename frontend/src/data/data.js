@@ -32,7 +32,7 @@ export const testimonials = [
   },
   {
     image: "customer-3.png",
-    fullName: "Emily Lara",
+    fullName: "Emily Lar",
     occupation: "Finacial Analyst",
   },
 ];

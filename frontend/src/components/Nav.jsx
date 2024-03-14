@@ -1,8 +1,11 @@
+import { useNavigate } from "react-router-dom";
 import Proptypes from "prop-types";
 import Link from "../ui/Link";
 import Button from "../ui/Button";
 
 function Nav({ isOpen }) {
+  const navigate = useNavigate();
+
   return (
     <nav
       className={`bg-primary-shade fixed lg:static h-[100vh] lg:h-auto inset-0 z-20 translate-y-[-100%] transition-[transform] lg:translate-x-[none] flex flex-col lg:flex-row items-center lg:justify-between lg:w-full gap-20 pt-20 lg:pt-0 ${
@@ -29,7 +32,14 @@ function Nav({ isOpen }) {
 
       <ul className="flex flex-col lg:flex-row gap-4 items-center">
         <li className="">
-          <Button type="inverted">Sign In</Button>
+          <Button
+            type="inverted"
+            onClick={() => {
+              navigate("/app");
+            }}
+          >
+            Sign In
+          </Button>
         </li>
         <li>
           <Button type="primary">Open an Account</Button>

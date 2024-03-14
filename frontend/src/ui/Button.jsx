@@ -1,16 +1,22 @@
 import PropTypes from "prop-types";
 
-function Button({ children = "click", type = "primary" }) {
+function Button({ children = "click", type = "primary", onClick }) {
   if (type === "primary")
     return (
-      <button className="text-lg font-semibold bg-[#9FE870] text-stone-900 px-6 py-3 rounded-full">
+      <button
+        onClick={onClick}
+        className="text-lg font-semibold bg-[#9FE870] text-stone-900 px-6 py-3 rounded-full"
+      >
         {children}
       </button>
     );
 
   if (type === "inverted")
     return (
-      <button className="text-lg font-semibold bg-[#fff] text-stone-900 px-6 py-3 rounded-full">
+      <button
+        onClick={onClick}
+        className="text-lg font-semibold bg-[#fff] text-stone-900 px-6 py-3 rounded-full"
+      >
         {children}
       </button>
     );
@@ -19,6 +25,7 @@ function Button({ children = "click", type = "primary" }) {
 Button.propTypes = {
   children: PropTypes.string,
   type: PropTypes.string,
+  onClick: PropTypes.func,
 };
 
 export default Button;

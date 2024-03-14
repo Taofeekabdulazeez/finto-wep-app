@@ -1,25 +1,16 @@
-import Header from "./Header";
-import Hero from "./Hero";
-import Features from "./Features";
-import Operations from "./Operations";
-import Overviews from "./Overviews";
-import Testimonials from "./Testimonials";
-import CallToAction from "./CallToAction";
-import Footer from "./Footer";
-import Partnerships from "./Partnerships";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Homepage from "./HomePage";
+import AppLayout from "./AppLayout";
 
 function App() {
   return (
     <>
-      <Header />
-      <Hero />
-      <Partnerships />
-      <Features />
-      <Operations />
-      <Overviews />
-      <Testimonials />
-      <CallToAction />
-      <Footer />
+      <BrowserRouter>
+        <Routes>
+          <Route index element={<Homepage />} />
+          <Route path="app" element={<AppLayout />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }
