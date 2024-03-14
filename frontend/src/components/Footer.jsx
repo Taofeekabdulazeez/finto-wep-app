@@ -7,7 +7,7 @@ function Footer() {
         <div className="mb-6">
           <img src="footerLogo.png" alt="finto logo" />
         </div>
-        <nav className="grid grid-cols-2 gap-8 border-b-2 py-6 lg:grid-cols-4">
+        <nav className="grid grid-cols-2 gap-8 border-b-2 py-6 lg:pb-8 lg:grid-cols-4">
           <ul className="flex flex-col gap-3">
             <li className="text-stone-500">Features</li>
             <li>
@@ -124,7 +124,7 @@ function Footer() {
             </li>
           </ul>
         </nav>
-        <div>
+        <div className="lg:flex justify-between items-center">
           <p className="text-center my-4 font-medium">
             2023 Finto. All right reserved
           </p>
